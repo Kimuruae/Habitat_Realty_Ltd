@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog - Habitat Realty Ltd</title>
+	<style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			margin: 0;
+			padding: 0;
+			background: #f7f7f7;
+			color: #222;
+		}
+		header {
+			background: #1a4d2e;
+			color: #fff;
+			padding: 36px 0 24px 0;
+			text-align: center;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+		}
+		header h1 {
+			margin: 0;
+			font-size: 2.3em;
+			letter-spacing: 1.5px;
+		}
+		nav {
+			margin-top: 10px;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 16px;
+			font-weight: 500;
+			font-size: 1.08em;
+			transition: color 0.2s;
+		}
+		nav a:hover {
+			color: #e2b04a;
+		}
+		.blog-section {
+			max-width: 1000px;
+			margin: 48px auto 0 auto;
+			background: #fff;
+			border-radius: 10px;
+			box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+			padding: 48px 30px 36px 30px;
+		}
+		.blog-section h2 {
+			color: #1a4d2e;
+			margin-top: 0;
+			font-size: 2em;
+			text-align: center;
+		}
+		.posts-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 32px;
+			margin-top: 32px;
+			justify-content: center;
+		}
+		.post {
+			flex: 1 1 280px;
+			background: #f3f3f3;
+			padding: 28px 22px 22px 22px;
+			border-radius: 8px;
+			box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+			min-width: 260px;
+			max-width: 340px;
+			display: flex;
+			flex-direction: column;
+			transition: transform 0.18s, box-shadow 0.18s;
+		}
+		.post:hover {
+			transform: translateY(-6px) scale(1.03);
+			box-shadow: 0 6px 24px rgba(26,77,46,0.13);
+		}
+		.post-title {
+			color: #e2b04a;
+			margin-bottom: 10px;
+			font-size: 1.25em;
+			font-weight: bold;
+		}
+		.post-meta {
+			font-size: 0.98em;
+			color: #888;
+			margin-bottom: 12px;
+		}
+		.post-content {
+			font-size: 1.08em;
+			line-height: 1.6;
+			flex: 1;
+		}
+		.read-more {
+			margin-top: 18px;
+			color: #1a4d2e;
+			text-decoration: underline;
+			font-weight: 500;
+			align-self: flex-start;
+			transition: color 0.2s;
+		}
+		.read-more:hover {
+			color: #e2b04a;
+		}
+		@media (max-width: 900px) {
+			.posts-list {
+				flex-direction: column;
+				align-items: center;
+			}
+			.blog-section {
+				padding: 32px 8px 24px 8px;
+			}
+		}
+		footer {
+			text-align: center;
+			padding: 20px 0;
+			background: #1a4d2e;
+			color: white;
+			margin-top: 40px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Habitat Realty Ltd</h1>
+		<nav>
+			<a href="index.html">Home</a>
+            <a href="properties.html">Property Portfolio</a>
+			<a href="services.html">Our Services</a>
+			<a href="about.html">About Us</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="blog.html">Blog</a>
+		</nav>
+	</header>
+	<section class="blog-section">
+		<h2>Habitat Realty Blog</h2>
+		<div class="posts-list">
+			<div class="post">
+				<div class="post-title">5 Tips for First-Time Home Buyers</div>
+				<div class="post-meta">December 10, 2025 | By Jane Doe</div>
+				<div class="post-content">
+					Buying your first home can be overwhelming. Here are five essential tips to help you make the right decision and enjoy a smooth buying process.
+				</div>
+				<a href="#" class="read-more">Read More</a>
+			</div>
+			<div class="post">
+				<div class="post-title">How to Stage Your Home for a Quick Sale</div>
+				<div class="post-meta">November 28, 2025 | By John Smith</div>
+				<div class="post-content">
+					Discover proven strategies to make your property more appealing to buyers and sell faster in today's competitive market.
+				</div>
+				<a href="#" class="read-more">Read More</a>
+			</div>
+			<div class="post">
+				<div class="post-title">Rental Market Trends for 2026</div>
+				<div class="post-meta">November 15, 2025 | By Emily Johnson</div>
+				<div class="post-content">
+					Stay ahead of the curve with our analysis of the latest trends in the rental market and what they mean for tenants and landlords.
+				</div>
+				<a href="#" class="read-more">Read More</a>
+			</div>
+		</div>
+	</section>
+	<footer>
+		&copy; 2025 Habitat Realty Ltd. All rights reserved.
+	</footer>
+</body>
+</html>

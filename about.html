@@ -1,0 +1,232 @@
+<!--About Us-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Habitat Realty Ltd</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            color: #222;
+        }
+        header {
+            background: #1a4d2e;
+            color: #fff;
+            padding: 36px 0 24px 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.3em;
+            letter-spacing: 1.5px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 16px;
+            font-weight: 500;
+            font-size: 1.08em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #e2b04a;
+        }
+        section {
+            padding: 48px 24px;
+            max-width: 950px;
+            margin: 36px auto 0 auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+        }
+        h3 {
+            color: #1a4d2e;
+            margin-top: 0;
+            font-size: 2em;
+        }
+        .team-list, .testimonials-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        .team-member {
+            flex: 1 1 260px;
+            background: #f3f3f3;
+            padding: 22px 18px;
+            border-radius: 8px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+            text-align: center;
+            transition: transform 0.18s, box-shadow 0.18s;
+        }
+        .team-member:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 6px 24px rgba(26,77,46,0.13);
+        }
+        .team-member h4 {
+            color: #e2b04a;
+            margin-bottom: 8px;
+        }
+        .testimonial {
+            flex: 1 1 280px;
+            background: #f9f9f9;
+            padding: 20px 18px;
+            border-radius: 8px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+            font-style: italic;
+            position: relative;
+        }
+        .testimonial:before {
+            content: '“';
+            font-size: 2.5em;
+            color: #e2b04a;
+            position: absolute;
+            left: 12px;
+            top: 0;
+        }
+        .testimonial:after {
+            content: '”';
+            font-size: 2.5em;
+            color: #e2b04a;
+            position: absolute;
+            right: 12px;
+            bottom: 0;
+        }
+        .contact-info {
+            margin-top: 18px;
+        }
+        .contact-info p {
+            margin: 8px 0;
+        }
+        .btn {
+            background: #e2b04a;
+            color: #1a4d2e;
+            padding: 12px 32px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.08em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 18px;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #c99c3b;
+        }
+        @media (max-width: 900px) {
+            section {
+                padding: 32px 8px;
+            }
+            .team-list, .testimonials-list {
+                flex-direction: column;
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #1a4d2e;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Habitat Realty Ltd</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="properties.html">Property Portfolio</a>
+            <a href="services.html"> Our Services</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h3>About Habitat Realty</h3>
+        <p style="font-size:1.18em; line-height:1.7; margin-bottom: 18px;">
+            <strong>Habitat Realty Ltd</strong> is a leading real estate firm dedicated to helping clients buy, sell, and rent properties with ease and confidence. With years of experience and a passion for excellence, our team provides personalized service and expert advice to ensure your real estate journey is smooth and successful.
+        </p>
+        <a href="#contact" class="btn">Contact Our Team</a>
+    </section>
+    <!-- Leadership and agents-->
+    <section id="team">
+        <h3>Meet Our Team</h3>
+        <div class="team-list">
+            <div class="team-member">
+                <h4>Jane Doe - CEO</h4>
+                <p>With over 15 years in the real estate industry, Jane leads Habitat Realty with a vision for excellence and customer satisfaction.</p>
+            </div>
+            <div class="team-member">
+                <h4>John Smith - Head of Sales</h4>
+                <p>John brings a wealth of experience in property sales and is dedicated to helping clients find their perfect homes.</p>
+            </div>
+            <div class="team-member">
+                <h4>Emily Johnson - Marketing Director</h4>
+                <p>Emily's innovative marketing strategies ensure that our properties reach the right audience effectively.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Company History -->
+    <section id="history">
+        <h3>Our History</h3>
+        <p>Founded in 2005, Habitat Realty has grown from a small local agency to a trusted name in the real estate market. Over the years, we have expanded our services and built a strong reputation for integrity, professionalism, and customer care.</p>
+    </section>
+
+    <!-- Mission and Vision -->
+    <section id="mission-vision">
+        <h3>Our Mission & Vision</h3>
+        <p><strong>Mission:</strong> To provide exceptional real estate services that exceed our clients' expectations through professionalism, integrity, and personalized care.</p>
+        <p><strong>Vision:</strong> To be the leading real estate firm recognized for innovation, customer satisfaction, and community impact.</p>
+    </section>
+
+    <!-- Community Involvement -->
+    <section id="community">
+        <h3>Community Involvement</h3>
+        <p>At Habitat Realty, we believe in giving back to the communities we serve. We actively participate in local events, support charitable organizations, and promote sustainable development practices in our projects.</p>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h3>What Our Clients Say</h3>
+        <div class="testimonials-list">
+            <div class="testimonial">
+                <p>Habitat Realty made the process of buying our first home so easy and stress-free. Their team was knowledgeable and supportive every step of the way!<br><span style="font-style:normal;font-weight:bold;display:block;margin-top:8px;">- Sarah L.</span></p>
+            </div>
+            <div class="testimonial">
+                <p>Thanks to Habitat Realty, we sold our property quickly and at a great price. Their marketing strategies really worked!<br><span style="font-style:normal;font-weight:bold;display:block;margin-top:8px;">- Michael T.</span></p>
+            </div>
+            <div class="testimonial">
+                <p>The rental services provided by Habitat Realty helped me find the perfect apartment in no time. Highly recommend!<br><span style="font-style:normal;font-weight:bold;display:block;margin-top:8px;">- Jessica R.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers -->
+    <section id="careers">
+        <h3>Careers at Habitat Realty</h3>
+        <p>Interested in joining our dynamic team? We are always looking for talented and motivated individuals to help us grow and serve our clients better. Check out our current job openings and apply today!</p>
+    </section>
+    <section id="contact">
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+            <p><strong>Email:</strong> info@habitatrealty.com</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Address:</strong> 123 Main Street, Your City, Country</p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 Habitat Realty Ltd. All rights reserved.
+    </footer>
+</body>
+</html>
